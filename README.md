@@ -8,4 +8,4 @@ Note that this includes all the basic elements of a bonita workflow application 
 
 This also serves as an example of using github and Bonita together.
 
-This was created for QUT IAB321 Business Process Technologies subject.
+This was created for the IAB321 Business Process Technologies subject at QUT.
