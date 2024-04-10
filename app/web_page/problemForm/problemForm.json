@@ -1,10 +1,10 @@
 {
-  "id" : "walkForm",
-  "name" : "walkForm",
+  "id" : "problemForm",
+  "name" : "problemForm",
   "type" : "form",
-  "uuid" : "e7001342-1216-4908-9712-e7e595096907",
+  "uuid" : "fc4de5c1-7479-462f-b464-002daf81c83b",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1711497850732,
+  "lastUpdate" : 1712715871750,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "119018f2-481f-4aa2-88d8-58483194eda3",
+        "reference" : "29670478-67ea-4903-a6c1-722ec4de1a06",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "fe8f256e-5c1a-4fd4-81be-6cf308fc4f49",
+              "reference" : "9d3083d8-dd09-44be-960a-873f0d0b956e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -63,10 +63,10 @@
             {
               "type" : "component",
               "dimension" : {
-                "md" : 12,
+                "md" : 6,
                 "sm" : 12,
                 "xs" : 12,
-                "lg" : 12
+                "lg" : 6
               },
               "propertyValues" : {
                 "allowHtml" : {
@@ -99,21 +99,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
                 }
               },
-              "reference" : "12ae10b0-6521-4b0f-beb5-0ab5a322c9d8",
+              "reference" : "47fe3a1d-13b4-423c-8a64-a0c94d36966a",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -129,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "88f5821a-0007-4dc0-aaf5-b4d397c12bdf",
+        "reference" : "3a980eae-67a6-4414-b101-fc48e7cffb96",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -138,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "3c60e124-2da6-4e8c-8faa-931bcdbeba52",
+          "reference" : "754ac61f-f632-4f5b-90a5-825df67073ed",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -175,11 +163,76 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
-                "reference" : "03d3cf64-4329-4ebe-9420-1e9b8c96c5ce",
+                "reference" : "c3927c99-2122-42fc-a493-41596b21f8cd",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!walkNotes.patientName"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Patient Name"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{walkNotes.patientName}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  }
+                },
+                "reference" : "46100bc6-d46b-41ed-911f-cbc63856ef4e",
+                "hasValidationError" : false,
+                "id" : "pbText",
                 "description" : ""
               }
             ],
@@ -209,7 +262,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a75d7cc9-86eb-447e-b2fb-dc53cb58c6c9",
+                "reference" : "cd53ac4c-9769-4a29-a1f6-caddf2b932ee",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -217,112 +270,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 6,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Patient Name"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "4085440d-afec-4b3f-9e63-5a786830ccc9",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 6,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{ walkNotes.patientName }}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "a59bd2cc-522d-47ff-b5a8-7e12cf504bbf",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -366,7 +317,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "walkNotes.patientName"
+                          "value" : "walkNotes.note"
                         },
                         "required" : {
                           "type" : "constant",
@@ -399,62 +350,9 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "78415c08-6674-4f71-828f-bca650b04b77",
+                      "reference" : "d8db9422-d26e-4aff-a560-7dd26e6b5d1a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Problem"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "walkNotes.problem"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "6f59b397-4cbb-40bc-98ae-11e540b46aa6",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
@@ -536,7 +434,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "daf9c2ba-363a-40a1-b4b9-79c7db3a764f",
+                "reference" : "0a7d785d-13fa-49b0-95f5-e232f1742ba3",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -588,7 +486,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e315a6cb-ba4f-49ea-82db-21994e96bfaa",
+                "reference" : "59e2ba2c-9234-475b-88e6-98f4b73da9e1",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -636,8 +534,7 @@
         "\treturn {",
         "\t\t//map walkNotes variable to expected task contract input",
         "\t\twalkNotesInput: {",
-        "\t\t\tnote: $data.walkNotes.note !== undefined ? $data.walkNotes.note : null,",
-        "\t\t\tproblem: $data.walkNotes.problem !== undefined ? $data.walkNotes.problem : null",
+        "\t\t\tnote: $data.walkNotes.note !== undefined ? $data.walkNotes.note : null",
         "\t\t}",
         "\t}",
         "}"
@@ -661,16 +558,16 @@
   },
   "assets" : [
     {
-      "id" : "fc4f112e-57d1-43a0-b6ca-9622b5236e92",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "8f2cab43-fb87-4ba6-85fe-c95ac32bc80a",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "4c80622b-c0c7-4d10-805e-2ef731b6f5b4",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "bd8f56a3-b7a2-429a-a02b-2b7cc52a0ea0",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
